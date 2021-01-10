@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/img/apple-icon.png"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/vendor/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"
+    />
+    <title>My Tailwind</title>
+  </head>
+  <body class="text-gray-800 antialiased">
+    <!-- Navbar -->
+    <nav
+      class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg"
+    >
+      <div
+        class="container px-4 mx-auto flex flex-wrap items-center justify-between"
+      >
+        <div
+          class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
+        >
+          <a
+            class="text-lg font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white"
+            href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation"
+            >Pa Ebou</a
+          ><button
+            class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+            type="button"
+            onclick="toggleNavbar('example-collapse-navbar')"
+          >
+            <i class="text-white fas fa-bars"></i>
+          </button>
+        </div>
+        <div
+          class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden"
+          id="example-collapse-navbar"
+        >
+          <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+            <!-- instragram icon -->
+            <li class="flex items-center">
+              <a
+                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                href="https://www.fa-instagram.com/paebou1"
+                ><i
+                  class="text-orange-500 fab fa-instagram text-lg leading-lg"
+                ></i
+                ><span class="lg:hidden inline-block ml-2">Share</span></a
+              >
+            </li>
+            <!-- twitter icon -->
+            <li class="flex items-center">
+              <a
+                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                href="htps://www.twitter.com/ebrima2ray1"
+                ><i
+                  class="text-orange-500 fab fa-twitter text-lg leading-lg"
+                ></i
+                ><span class="lg:hidden inline-block ml-2">Tweet</span></a
+              >
+            </li>
+            <!-- github icon -->
+            <li class="flex items-center">
+              <a
+                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                href="https://www.github.com/touraye"
+                ><i class="text-orange-500 fab fa-github text-lg leading-lg"></i
+                ><span class="lg:hidden inline-block ml-2">Github</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Main -->
+    <main>
+      <!-- Hero -->
+      <div
+        class="relative pt-16 pb-32 flex content-center items-center justify-center"
+        style="min-height: 95vh"
+      >
+        <div
+          class="absolute top-0 w-full h-full bg-top bg-cover"
+          style="background-image: url('./assets/img/hero-img.jpg')"
+        >
+          <span
+            id="blackOverlay"
+            class="w-full h-full absolute opacity-75 bg-black"
+          ></span>
+        </div>
+        <div class="container relative mx-auto" data-aos="fade-in">
+          <div class="items-center flex flex-wrap">
+            <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+              <div class="">
+                <h1 class="text-white font-semibold text-5xl">
+                  Hey, I'm <span class="text-orange-500">Pa Ebou</span>
+                </h1>
+                <p class="mt-4 text-lg text-orange-500">
+                  I'm a frot-end web developer, with love for design and
+                  performance. I have passion for
+                  <span class="text-white font-semi-bold uppercase">ui</span>
+                  and
+                  <span class="text-white font-semi-bold uppercase">ux</span>
+                  effects, animations and creating intuitive, dynamic user
+                  experience.
+                </p>
+                <a
+                  href="#form"
+                  class="bg-transparent hover:bg-orange-500 font-sime-bold text-orange-500 hover:text-white py-2 px-4 border border-orange-500 hover:transparent rounded inline-block mt-4"
+                  >Hire Me</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+          style="height: 70px; transform: translateZ(0px)"
+        >
+          <svg
+            class="absolute bottom-0 overflow-hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            version="1.1"
+            viewBox="0 0 2560 100"
+            x="0"
+            y="0"
+          >
+            <polygon points="2560 0 2560 100 0 100"></polygon>
+          </svg>
+        </div>
+      </div>
+      <!-- About -->
+      <section id="about" class="relative py-20 bg-black text-white">
+        <div
+          class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+          style="height: 80px; transform: translateZ(0px)"
+        >
+          <svg
+            class="absolute bottom-0 overflow-hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            version="1.1"
+            viewBox="0 0 2560 100"
+            x="0"
+            y="0"
+          >
+            <polygon points="2560 0 2560 100 0 100"></polygon>
+          </svg>
+        </div>
+        <div class="container mx-auto px-4">
+          <div class="items-center flex flex-wrap">
+            <div class="w-full md:w-4/12 ml-auto mr-auto px-4" data-aos="fade-right">
+              <img
+                alt="..."
+                class="max-w-full rounded-lg shadow-lg"
+                src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80"
+              />
+            </div>
+            <div class="w-full md:w-5/12 ml-auto mr-auto px-4" data-aos="fade-left">
+              <div class="md:pr-12">
+                <h3 class="text-3xl text-orange-500 font-bold uppercase mt-4">
+                  my skills
+                </h3>
+                <p class="mt-4 text-lg leading-relaxed">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Ipsam, ullam.
+                </p>
+                <ul class="list-none mt-6">
+                  <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                        <span
+                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-orange-600 bg-orange-200 mr-3"
+                          ><i class="fab fa-html5"></i
+                        ></span>
+                      </div>
+                      <div>
+                        <h4 class="uppercase">html5</h4>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                        <span
+                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-orange-600 bg-orange-200 mr-3"
+                          ><i class="fab fa-css3"></i
+                        ></span>
+                      </div>
+                      <div>
+                        <h4 class="uppercase">css3</h4>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                        <span
+                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-orange-600 bg-orange-200 mr-3"
+                          ><i class="fab fa-sass"></i
+                        ></span>
+                      </div>
+                      <div>
+                        <h4 class="uppercase">sass</h4>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                        <span
+                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-orange-600 bg-orange-200 mr-3"
+                          ><i class="fa fa-code"></i
+                        ></span>
+                      </div>
+                      <div>
+                        <h4 class="uppercase">tailwind-css</h4>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                        <span
+                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-orange-600 bg-orange-200 mr-3"
+                          ><i class="fab fa-bootstrap"></i
+                        ></span>
+                      </div>
+                      <div>
+                        <h4 class="uppercase">bootstrap5</h4>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                        <span
+                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-orange-600 bg-orange-200 mr-3"
+                          ><i class="fab fa-js"></i
+                        ></span>
+                      </div>
+                      <div>
+                        <h4 class="uppercase">javascript</h4>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                        <span
+                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-orange-600 bg-orange-200 mr-3"
+                          ><i class="fa fa-database"></i
+                        ></span>
+                      </div>
+                      <div>
+                        <h4 class="uppercase">mongodb</h4>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                        <span
+                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-orange-600 bg-orange-200 mr-3"
+                          ><i class="fa fa-database"></i
+                        ></span>
+                      </div>
+                      <div>
+                        <h4 class="uppercase">sql</h4>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- service -->
+      <section class="pt-20 pb-20 bg-black text-white">
+        <div class="container mx-auto px-4 lg:pt-24 lg:pb-64">
+          <div class="flex flex-wrap justify-center text-center mb-24">
+            <div class="w-full lg:w-6/12 px-4">
+              <h2 class="text-4xl font-bold text-orange-500 uppercase">
+                Features
+              </h2>
+              <p class="text-lg leading-relaxed m-4 text-gray-600">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+                eos necessitatibus ullam dolorem vitae consectetur! Ducimus
+                perspiciatis earum sapiente tempore?
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-wrap">
+            <!-- card one -->
+            <div
+              class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4 text-center" data-aos="fade-in"
+            >
+              <div class="px-6">
+                <span
+                  class="text-lg p-4 rounded-full text-orange-600 bg-orange-200 mr-3"
+                >
+                  <i class="fa fa-mobile bg-orange-200"></i>
+                </span>
+                <div class="pt-6 text-center">
+                  <h5 class="text-xl font-bold">Responsive</h5>
+                  <p class="mt-1 text-sm font-semibold">
+                    My layouts will look perfect on any device, regardless of
+                    the screen size.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- card two -->
+            <div
+              class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4 text-center" data-aos="fade-in"
+            >
+              <div class="px-6">
+                <span
+                  class="text-lg p-4 rounded-full text-orange-600 bg-orange-200 mr-3"
+                >
+                  <i class="fa fa-rocket bg-orange-200"></i>
+                </span>
+                <div class="pt-6 text-center">
+                  <h5 class="text-xl font-bold">Dynamic</h5>
+                  <p class="mt-1 text-sm font-semibold">
+                    Website don't have be boring. I love to give them a life
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- card three -->
+            <div
+              class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4 text-center" data-aos="fade-in"
+            >
+              <div class="px-6">
+                <span
+                  class="text-lg p-4 rounded-full text-orange-600 bg-orange-200 mr-3"
+                >
+                  <i class="fa fa-lightbulb bg-orange-200"></i>
+                </span>
+                <div class="pt-6 text-center">
+                  <h5 class="text-xl font-bold">Intuitive</h5>
+                  <p class="mt-1 text-sm font-semibold">
+                    Easy to use, intuitive UX/UI out of the box
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- card four -->
+            <div
+              class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4 text-center" data-aos="fade-in"
+            >
+              <div class="px-6">
+                <span
+                  class="text-lg p-4 rounded-full text-orange-600 bg-orange-200 mr-3"
+                >
+                  <i class="fa fa-code bg-orange-200"></i>
+                </span>
+                <div class="pt-6 text-center">
+                  <h5 class="text-xl font-bold">Fast</h5>
+                  <p class="mt-1 text-sm font-semibold">
+                    Blazing fast load is my highest priority
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Portfolio -->
+      <section class="pb-5 relative block bg-gray-900">
+        <div
+          class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+          style="height: 80px; transform: translateZ(0px)"
+        >
+          <svg
+            class="absolute bottom-0 overflow-hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            version="1.1"
+            viewBox="0 0 2560 100"
+            x="0"
+            y="0"
+          >
+            <polygon
+              class="text-gray-900 fill-current"
+              points="2560 0 2560 100 0 100"
+            ></polygon>
+          </svg>
+        </div>
+        <div class="container mx-auto px-4 lg:pt-24 lg:pb-64 pt-20 pb-20">
+          <div class="flex flex-wrap text-center justify-center">
+            <div class="w-full lg:w-6/12 px-4">
+              <h2 class="text-4xl font-semibold text-orange-500 uppercase">
+                Portfolio
+              </h2>
+              <p class="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deserunt rerum vero tempore impedit delectus doloribus? Sint
+                sunt sequi ex. Hic, doloremque et porro numquam voluptatum
+                perferendis sunt doloribus eaque temporibus.
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-wrap mt-12 justify-center">
+            <!-- cadr one -->
+            <div class="w-full lg:w-3/12 text-center bg-gray-700 rounded m-2 cursor-pointer group border-white-500 hover:bg-white hover:shadow-lg hover:border-gray-400" data-aos="fade-out">
+              <img
+                src="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                alt="responsive web"
+              />
+              <h6 class="text-xl mt-5 font-semibold text-white">
+                Responsive Web Design
+              </h6>
+              <p class="mt-2 mb-4 text-gray-500">
+                FreeCodeCamp reponsive design certificate
+              </p>
+              <a
+                href="#"
+                class="bg-transparent hover:bg-orange-500 font-sime-bold text-orange-500 hover:text-white py-2 px-4 border border-orange-500 hover:transparent rounded inline-block mb-2"
+                >See More</a
+              >
+            </div>
+            <!-- card two -->
+            <div class="w-full lg:w-3/12 text-center bg-gray-700 rounded m-2 cursor-pointer group border-white-500 hover:bg-white hover:shadow-lg hover:border-gray-400" data-aos="fade-out">
+              <img
+                src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80"
+                alt="responsive web"
+              />
+              <h6 class="text-xl mt-5 font-semibold text-white">
+                JavaScript Algorithms and Data Structure
+              </h6>
+              <p class="mt-2 mb-2 text-gray-500">
+                FreeCodeCamp basic javascript
+              </p>
+              <a
+                href="#"
+                class="bg-transparent hover:bg-orange-500 font-sime-bold text-orange-500 hover:text-white py-2 px-4 border border-orange-500 hover:transparent rounded inline-block mb-2"
+                >See More</a
+              >
+            </div>
+            <!-- card three -->
+            <div class="w-full lg:w-3/12 text-center bg-gray-700 rounded m-2 cursor-pointer group border-white-500 hover:bg-white hover:shadow-lg hover:border-gray-400" data-aos="fade-out">
+              <img
+                src="https://images.unsplash.com/photo-1553268169-8232852a2377?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1024&q=80"
+                alt="responsive web"
+              />
+              <h6 class="text-xl mt-5 font-semibold text-white">MongoDB 101</h6>
+              <p class="mt-2 mb-4 text-gray-500">Mongodb university course</p>
+              <a
+                href="#"
+                class="bg-transparent hover:bg-orange-500 font-sime-bold text-orange-500 hover:text-white py-2 px-4 border border-orange-500 hover:transparent rounded inline-block mb-2"
+                >See More</a
+              >
+            </div>
+            <!-- card four -->
+            <div
+              class="w-full lg:w-3/12 text-center bg-gray-700 rounded m-2 cursor-pointer group border-white-500 hover:bg-white hover:shadow-lg hover:border-gray-400" data-aos="fade-out"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1556155092-490a1ba16284?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80"
+                alt="responsive web"
+                class="group-hover:text-gray-500"
+              />
+              <h6
+                class="text-xl mt-5 font-semibold text-white group-hover:text-gray-500"
+              >
+                SQL Project
+              </h6>
+              <p class="mt-2 mb-4 text-gray-500 group-hover:text-gray-500">
+                myslq database project
+              </p>
+              <a
+                href="#"
+                class="bg-transparent hover:bg-orange-500 font-sime-bold text-orange-500 hover:text-white py-2 px-4 border border-orange-500 hover:transparent rounded inline-block mb-2 group-hover:text-gray-500 transform hover:scale-110 motion-reduce:transform-none"
+                >See More</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact -->
+      <section class="pb-10 relative block bg-black" id="form">
+        <div
+          class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+          style="height: 80px; transform: translateZ(0px)"
+        >
+          <svg
+            class="absolute bottom-0 overflow-hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            version="1.1"hover:text-white py-2 px-4 border border-orange-500 hover:transparent
+            viewBox="0 0 2560 100"
+            x="0"
+            y="0"
+          >
+            <polygon points="2560 0 2560 100 0 100"></polygon>
+          </svg>
+        </div>
+        <div class="container mx-auto px-4 lg:pt-24 lg:pb-64 pt-20 pb-20">
+          <div class="flex flex-wrap text-center justify-center">
+            <div class="w-full lg:w-6/12 px-4">
+              <h2 class="text-4xl font-bold text-orange-500 uppercase">
+                contact me
+              </h2>
+              <p class="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Tempore laboriosam iusto placeat mollitia temporibus asperiores!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact form -->
+      <section class="relative block py-24 lg:pt-0 mt-4 bg-black">
+        <div class="container mx-auto px-4 bg-black max-w-full">
+          <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48 bg-black">
+            <div class="w-full lg:w-6/12 px-4 bg-black">
+              <div
+                class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-orange-500"  data-aos="fade-up-right"
+              >
+                <div class="flex-auto p-5 lg:p-10 bg-orange-700 text-white">
+                  <h4 class="text-2xl font-semibold text-center">
+                    Let's Get In Touch
+                  </h4>
+                  <p class="leading-relaxed mt-1 mb-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatibus, aliquid?
+                  </p>
+                  <div class="relative w-full mb-3 mt-8">
+                    <label
+                      class="block uppercase text-xs font-bold mb-2"
+                      for="full-name"
+                      >Full Name</label
+                    ><input
+                      type="text"
+                      class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                      placeholder="Full Name"
+                      style="transition: all 0.15s ease 0s"
+                    />
+                  </div>
+                  <div class="relative w-full mb-3">
+                    <label
+                      class="block uppercase text-xs font-bold mb-2"
+                      for="email"
+                      >Email</label
+                    ><input
+                      type="email"
+                      class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                      placeholder="Email"
+                      style="transition: all 0.15s ease 0s"
+                    />
+                  </div>
+                  <div class="relative w-full mb-3">
+                    <label
+                      class="block uppercase text-xs font-bold mb-2"
+                      for="message"
+                      >Message</label
+                    ><textarea
+                      rows="4"
+                      cols="80"
+                      class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                      placeholder="Type a message..."
+                    ></textarea>
+                  </div>
+                  <div class="text-center mt-6">
+                    <button
+                      class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                      type="button"
+                      style="transition: all 0.15s ease 0s"
+                    >
+                      Send Message
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer section -->
+    <footer class="relative bg-gray-500 pt-8 pb-6">
+      <div
+        class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+        style="height: 80px; transform: translateZ(0px)"
+      >
+        <svg
+          class="absolute bottom-0 overflow-hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          version="1.1"
+          viewBox="0 0 2560 100"
+          x="0"
+          y="0"
+        >
+          <polygon
+            class="text-gray-500 fill-current"
+            points="2560 0 2560 100 0 100"
+          ></polygon>
+        </svg>
+      </div>
+      <div class="container mx-auto px-4">
+        <div class="text-center">
+          <div class="w-full px-4">
+            <h4 class="text-3xl font-semibold">Let's keep in touch!</h4>
+            <h5 class="text-lg mt-0 mb-2 text-gray-700">
+              I'm social and share codes on github
+            </h5>
+            <div class="mt-6">
+              <button
+                class="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                type="button"
+              >
+                <i class="flex fab fa-twitter text-orange-500"></i>
+              </button>
+              <button
+                class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                type="button"
+              >
+                <i class="flex fab fa-instagram text-orange-500"></i></button
+              ><button
+                class="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                type="button"
+              >
+                <i class="flex fab fa-github text-orange-500"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <hr class="my-6 border-gray-400" />
+        <div
+          class="flex flex-wrap items-center md:justify-between justify-center"
+        >
+          <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+            <div class="text-sm font-semibold py-1">
+              Made with <i class="fa fa-heart text-red-700 text-lg"></i> by
+              <span class="uppercase">pa ebou</span>
+            </div>
+          </div>
+          <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+            <div class="text-sm text-gray-600 font-semibold py-1">
+              Copyright © 2021.
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    function toggleNavbar(collapseID) {
+      document.getElementById(collapseID).classList.toggle("hidden");
+      document.getElementById(collapseID).classList.toggle("block");
+    }
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous"></script>
+
+  <script>
+    AOS.init({
+      delay: 200,
+      duration: 1200,
+      once: false
+    })
+  </script>
+</html>
